@@ -1,0 +1,371 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+}
+
+a {
+    cursor: pointer;
+}
+
+nav ul,
+nav ul li {
+    display: inline;
+    align-items: center;
+    height: 80px;
+}
+
+nav ul {
+    width: 100%;
+}
+
+nav {
+    box-shadow: 0 2px 20px 0 rgba(0, 0, 0, .2);
+    position: fixed;
+    top: 0;
+    background-color: white;
+    right: 0;
+    left: 0;
+    z-index: 5000;
+}
+
+nav ul li.link {
+    background-color: transparent;
+    background-color: rgb(250, 250, 250);
+    border-radius: 15px;
+    height: auto;
+    padding: 6px 15px;
+    margin: 8px;
+    font-size: small;
+    font-weight: semibold;
+    transition: 200ms;
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    margin-top: 35px;
+    margin-right: 20px;
+
+}
+
+.link a {
+    color: black;
+}
+
+.link.primary a {
+    color: white;
+}
+
+nav ul li.link.primary {
+    background-color: rgb(61, 77, 255);
+    color: white;
+}
+
+nav ul li.link:hover {
+    background-color: rgb(242, 242, 242);
+}
+
+nav ul li.link.primary:hover {
+    background-color: rgb(78, 93, 255);
+    color: white;
+}
+
+nav ul li img {
+    display: inline;
+    height: 80px;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.marquee {
+    background: #efefef;
+    padding: 0.5rem;
+    overflow: hidden;
+}
+
+.marquee_text {
+    overflow: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    display: block;
+    white-space: nowrap
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.marquee_text span {
+    padding: 0 20px;
+}
+
+.hero {
+    display: block;
+    position: relative;
+}
+
+.hero-image {
+    background-size: cover;
+    background-image: url('cleaning.jpg');
+}
+
+.hero-content {
+    min-height: 100vh;
+    height: inherit;
+    width: 100%;
+}
+
+.hero-image .hero-content {
+    background-color: rgba(0, 0, 0, .5);
+    color: white;
+    height: inherit;
+}
+
+.hero-content .hero-content-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    width: 700px;
+    max-width: 80vw;
+    height: auto;
+}
+
+.hero-content .hero-content-content h1 {
+    margin-top: 90px;
+}
+
+.hero-content .hero-content-content form input,
+.hero-content .hero-content-content form select,
+.hero-content .hero-content-content form textarea {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: block;
+    width: 100%;
+    padding: 12px 20px;
+    font-size: medium;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+.hero-content .hero-content-content form input,
+.hero-content .hero-content-content form textarea {
+    width: calc(100% - 40px);
+}
+
+.hero-content .hero-content-content form button {
+    background-color: rgb(61, 77, 255);
+    color: white;
+    border: none;
+    padding: 6px 30px;
+    border-radius: 8px;
+    font-size: larger;
+}
+
+::placeholder {
+    color: white;
+    opacity: 1;
+}
+
+.hero-content .link {
+    color: white;
+    text-decoration: underline;
+    border: none;
+    padding: 6px 15px;
+    border-radius: 8px;
+    font-size: larger;
+}
+
+footer .link {
+    color: rgb(222, 222, 222);
+    text-decoration: underline;
+    border: none;
+    margin: 10px 0;
+    border-radius: 8px;
+    font-size: medium;
+    display: block;
+}
+
+.hero-content p {
+    padding: 15px;
+}
+
+.timeline-entry {
+    width: 100%;
+    border-left: 4px solid rgb(240, 240, 240);
+    padding-left: 20px;
+    margin-top: 30px
+}
+
+.timeline-entry .year {
+    display: block;
+    font-family: monospace;
+    font-size: large;
+}
+
+.timeline-entry .title {
+    display: block;
+    font-size: larger;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.timeline-entry .story {}
+
+.hero-content.secondary {
+    width: 700px;
+    max-width: 80vw;
+    margin: 90px auto;
+}
+
+footer {
+    text-align: left;
+    background-color: rgb(0, 12, 50);
+    color: rgb(215, 215, 215);
+    padding: 40px;
+}
+
+footer div {
+    max-width: 80vw;
+    width: 600px;
+    margin: auto
+}
+
+footer div h1,
+footer div h3 {
+    margin: 10px 0;
+}
+
+.city-content {
+    background-size: cover;
+    min-height: 40vh;
+    height: inherit;
+    width: auto;
+    padding: 40px;
+}
+
+.city-content.hero {
+    padding: 175px 40px 0 40px;
+}
+
+.city-content.hero * {
+    color: white;
+}
+
+.city-content h1 {
+    font-size: 40px;
+}
+
+.contact {
+    display: inline-block;
+    width: calc(50vw - 50px)
+}
+
+.contact img {
+    float: left;
+    height: 150px;
+    margin-right: 20px;
+    border-radius: 10%;
+}
+
+.contact div {
+    padding: 22px;
+    padding-left: 15px !important;
+}
+
+.pill-parent span {
+    background-color: white;
+    color: black !important;
+    margin: 6px;
+    padding: 4px 10px;
+    border-radius: 100px;
+    display: inline-block;
+}
+
+#nav {
+    transition-duration: 100ms;
+}
+
+.contacts {
+    display: flexbox;
+}
+
+.counters {
+    background-color: #0056a3;
+}
+
+.counter {
+    display: inline-block;
+    text-align: center;
+    width: calc(24vw - 50px);
+    margin: auto;
+    padding: 25px;
+    color: white;
+}
+
+.number {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    margin: auto
+}
+
+.caption {
+    font-size: 1.2rem;
+}
+
+@media (max-width: 950px) {
+    .contact {
+        width: 100%
+    }
+
+    .counter {
+        width: calc(49vw - 50px);
+    }
+}
+
+@media (max-width: 775px) {
+
+    nav ul.primary-list li.link {
+        display: none;
+
+    }
+
+    .second-marquee ul {
+        display: block;
+    }
+}
+
+.marquee_text a {
+    color: rgb(0, 0, 98);
+}
+
+@media (min-width: 776px) {
+    .second-marquee ul {
+        display: none;
+    }
+}
+
+.second-marquee ul {
+    list-style-type: none !important;
+    white-space: nowrap !important;
+    overflow-x: scroll !important;
+    overflow-y: hidden !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    height: auto !important;
+    width: auto !important;
+    float: none !important;
+}
+
+.second-marquee ul li {
+    display: inline-block !important;
+    margin: 5px !important;
+    float: none !important;
+}

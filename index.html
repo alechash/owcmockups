@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <script>
+        window.onscroll = function () {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+                document.getElementById("nav").style.zoom = "80%";
+            } else {
+                document.getElementById("nav").style.zoom = "100%";
+            }
+        }
+    </script>
+    <nav id="nav">
+        <ul>
+            <li>
+                <a href="index.html"><img src="logo.svg" /></a>
+            </li>
+            <li class="link primary"><a href="quote.html">Get a Service Quote</a></li>
+            <li class="link"><a href="jobs.html">Apply for a Job</a></li>
+            <li class="link"><a href="index.html#history">Our History</a></li>
+            <li class="link"><a href="tel:18008331040">1 (800) 833-1040</a></li>
+        </ul>
+        <div class="marquee">
+            <div class="marquee_text">
+                <span><a href="cincinnati.html">Cincinnati, OH</a></span>
+                <span><a href="cleveland.html">Cleveland, OH</a></span>
+                <span><a href="columbus.html">Columbus, OH</a></span>
+                <span><a href="dayton.html">Dayton, OH</a></span>
+                <span><a href="indianapolis.html">Indianapolis, IN</a></span>
+                <span><a href="lexington.html">Lexington, KY</a></span>
+                <span><a href="louisville.html">Louisville, KY</a></span>
+                <span><a href="raleigh.html">Raleigh, NC</a></span>
+
+            </div>
+        </div>
+    </nav>
+    <div class="hero hero-image">
+        <div class="hero-content">
+            <div class="hero-content-content">
+                <h1>Get a Service Quote</h1>
+                <form>
+                    <input type="text" placeholder="Your name" />
+                    <input type="text" placeholder="Business name" />
+                    <input type="text" placeholder="Business address" />
+                    <input type="text" placeholder="Estimated window count" />
+                    <select name="market" id="market">
+                        <option disabled selected>Select your market</option>
+                        <option value="cincinnati">Cincinnati</option>
+                        <option value="cleveland">Cleveland</option>
+                        <option value="columbus">Columbus</option>
+                        <option value="dayton">Dayton</option>
+                        <option value="indianapolis">Indianapolis</option>
+                        <option value="lexington">Lexington</option>
+                        <option value="louisville">Louisville</option>
+                        <option value="raleigh">Raleigh</option>
+                        <option value="charlotte">Charlotte – Opening Soon</option>
+                        <option value="austin">Austin – Opening Soon</option>
+                    </select>
+                    <button>Submit</button>
+                    <p id="history" style=" display: inline;">or <a class="link" href="jobs.html">Apply for a job</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="counters">
+        <div class="counter">
+            <div class="number" id="number1">0</div>
+            <div class="caption">windows cleaned</div>
+        </div>
+        <div class="counter">
+            <div class="number" id="number2">0</div>
+            <div class="caption">customers happy</div>
+        </div>
+        <div class="counter">
+            <div class="number" id="number3">0</div>
+            <div class="caption">stores cleaned</div>
+        </div>
+        <div class="counter">
+            <div class="number" id="number4">0</div>
+            <div class="caption">years in business</div>
+        </div>
+    </div>
+    <div class="hero">
+        <div class=" hero-content secondary">
+            <h1>Our History</h1>
+            <div class="timeline-entry">
+                <span class="year">1969</span>
+                <span class="title">First Windows Cleaned</span>
+                <span class="story">The Window Cleaning Company started with a Kroger as "Ohio Window Cleaning" in
+                    Logan county, just outside of Columbus, Ohio. From there we expanded all over Columbus cleaning
+                    Krogers and adding restaurants around those Krogers onto service.
+                </span>
+            </div>
+            <div class="timeline-entry">
+                <span class="year">1989, 1990</span>
+                <span class="title">Some Expansion</span>
+                <span class="story">After two decades of hard and quality work with several employees and major growth,
+                    the company expanded its operations to Dayton in 1989 and shortly after Cincinnati in 1990. The
+                    company moved its office to north Dayton to center itself and to be near where the owners now lived.
+                </span>
+            </div>
+            <div class="timeline-entry">
+                <span class="year">1992</span>
+                <span class="title">Welcome to Kentucky</span>
+                <span class="story">With many businesses and franchises in Cincinnati also wanting service in Lexington,
+                    the company slowly moved into Kentucky. Our customers loved the high quality work they were getting
+                    so they wanted our service at all of their locations.
+                </span>
+            </div>
+            <div class="timeline-entry">
+                <span class="year">1995</span>
+                <span class="title">Derby City</span>
+                <span class="story">Given many businesses in Lexington also operated in the close by sister city,
+                    Louisville, the company quickly expanded into the city of Louisville.
+                </span>
+            </div>
+            <div class="timeline-entry">
+                <span class="year">1997</span>
+                <span class="title">Welcome to the Hoosier State</span>
+                <span class="story">The companies first major jump to a new city was to Indianapolis in 1997.
+                    Indianapolis is one of the fastest growing cities in the midwest, offering a ton of opportunity and
+                    growth for the company. Going from the current base to Indianapolis was a big feat, with hard work
+                    from everyone in the company, it was a success.
+                </span>
+            </div>
+            <div class="timeline-entry">
+                <span class="year">2014</span>
+                <span class="title">Believeland</span>
+                <span class="story">After going through the 2008 recession and focusing on company efficiencies through
+                    the 2000s, the company expanded into another major market, Cleveland. With heavy competition and a
+                    struggling economy, Cleveland proved to be a difficult expansion but after a few years of hard work
+                    and dedicaiton, the Cleveland market found its footing.
+                </span>
+            </div>
+            <div class="timeline-entry">
+                <span class="year">2024</span>
+                <span class="title">Company Restructuring</span>
+                <span class="story">The company rebranded from "Ohio Window Cleaning" to The Window Cleaning Company as
+                    its footprint expanded. They also focused on increasing more efficiencies and reorganizing roles in
+                    the company such as sales and office. The company also introduced new software for its routemen,
+                    office staff, and customers.
+                </span>
+            </div>
+            <div class="timeline-entry">
+                <span class="year">2025</span>
+                <span class="title">To the East Coast</span>
+                <span class="story">For the first time in the companies history, they expanded into a state that is not
+                    next to their existing base. With massive growth in Raleigh and Charlotte, the company saw
+                    opportunity and struck.
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <iframe width="100%" height="600" src="https://www.youtube.com/embed/uSjCGK1TYXY?autoplay=1&mute=1"
+        title="Ohio Window Cleaning: Power Washing &amp; Professional Window Cleaning" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <footer>
+        <div>
+            <h1>The Window Cleaning Company</h1>
+            <p>Professional commercial window cleaning services for businesses across Ohio, Indiana, Kentucky, North
+                Carolina, and soon Texas.</p>
+
+            <br>
+            <h3>Navigate</h3>
+            <ul>
+                <a href="index.html" class="link">Home</a>
+                <a href="sms:18008331040" class="link">1 (800) 833-1040</a>
+                <a href="index.html#history" class="link">Our History</a>
+                <a href="jobs.html" class="link">Apply for a Job</a>
+                <a href="quote.html" class="link">Get a Service Quote</a>
+            </ul>
+
+            <br>
+            <h3>Contact Us</h3>
+            <p>
+                <a href="tel:12345678910" class="link">1 (234) 567-8910</a>
+                <a href="mailto:hi@thewindowcleaningcompany.com" class="link">hi@thewindowcleaningcompany.com</a>
+            </p>
+        </div>
+    </footer>
+    <script>
+        function countUp(elementId, maxValue, duration) {
+            const element = document.getElementById(elementId);
+            const frameRate = 60; // Frames per second
+            const totalFrames = Math.round((duration / 1000) * frameRate);
+            const increment = Math.ceil(maxValue / totalFrames);
+            let currentValue = 0;
+
+            const interval = setInterval(() => {
+                currentValue += increment;
+                if (currentValue >= maxValue) {
+                    currentValue = maxValue; // Ensure exact end value
+                    clearInterval(interval);
+                }
+                element.textContent = currentValue.toLocaleString(); // Format with commas
+            }, 1000 / frameRate);
+        }
+
+        // Target values
+        const target1 = 50000000;
+        const target2 = 8000;
+        const target3 = 60000;
+        const target4 = 55;
+
+        // Intersection Observer to trigger the counters
+        const observer = new IntersectionObserver(
+            (entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        countUp('number1', target1, 3000); // 3 seconds
+                        countUp('number2', target2, 2000); // 3 seconds
+                        countUp('number3', target3, 2500); // 3 seconds
+                        countUp('number4', target4, 1500); // 3 seconds
+                        observer.disconnect(); // Stop observing after activation
+                    }
+                });
+            }, {
+                threshold: 0.5
+            } // Trigger when 50% of the element is visible
+        );
+
+        // Attach observer to the number elements
+        document.querySelectorAll('.number').forEach(number => observer.observe(number));
+    </script>
+</body>
+
+</html>
